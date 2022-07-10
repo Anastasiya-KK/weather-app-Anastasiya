@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="weather-app">
+      <div class="row">
+        <div class="col-2">
+          <h1 id="city"></h1>
+        </div>
+        <div class="col-4">
+          <form id="search-form">
+            <input type="search" class="form-control" placeholder="Type a city" autofocus="on" id="city-input"/>
+          </div>
+          <div class="col-3">
+            <input type="submit" class="form-control btn btn-primary" value="Search" />
+          </div>
+        </form>
+          <div class="col-3">
+            <button class="btn btn-success w-100" id="current-location-button">Current</button>
+          </div>
+        </div>
+      
+  
+      <div class="row">
+        <div class="col-4">
+        <div id="date">
+        </div>
+        </br>  
+        <span class="temperature" id="temperature"></span>
+        <span class="units">°C</span>
+        </br>
+          <div id="description">
+            
+            </div>
+        </div>
+        <div class="col-4">
+            <p>
+            <div class="additional-info">    
+            sunrise 7:00
+                </br>
+                sunset 19:20
+                </br>
+                💧 <span id ="humidity"></span>%
+              </br>
+                💨 <span id ="wind"></span> km/h
+            </div>
+            </p>
+        </div>
+      </div>
+      <div class="card border-primary mb-3" style="max-width: 60rem;">
+  <div class="card-body">
+    <div class="weekdays">
+    <div class="row">
+        <div class="col-2">
+            <p>
+                Sun
+            </br>
+                ☀️
+            </br>
+            +25°C
+            </p>
+        </div>
+        <div class="col-2">
+            <p>
+                Mon
+            </br>
+                🌥
+            </br>
+            +23°C
+            </p>
+        </div>
+        <div class="col-2">
+            <p>
+                Tue
+            </br>
+                🌧
+            </br>
+            +19°C
+            </p>
+        </div>
+        <div class="col-2">
+            <p>
+                Wed
+            </br>
+                ⛈
+            </br>
+            +22°C
+            </p>
+        </div>
+        <div class="col-2">
+            <p>
+                Thu
+            </br>
+                🌧
+            </br>
+            +20°C
+            </p>
+        </div>
+        <div class="col-2">
+            <p>
+                Fri
+            </br>
+                ☀️
+            </br>
+            +23°C
+            </p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
