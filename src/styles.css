@@ -65,3 +65,10 @@ p,
   padding-right: 15px;
   padding-left: 15px;
 }
+
+.coded-by {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 80%;
+  margin: 20px auto;
+  max-width: 600px;
+}
