@@ -29,14 +29,14 @@ p,
 }
 
 #description {
-  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
+  text-align: center;
 }
 
 #search-form {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .weather-app {
@@ -52,11 +52,12 @@ p,
   left: 40px;
 }
 
-.temperature {
+#temperature {
   color: rgb(33, 33, 33);
   font-size: 44px;
   font-weight: 400;
   line-height: 1;
+  text-align: center;
 }
 
 .units {
