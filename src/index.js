@@ -51,7 +51,6 @@ dateElement.innerHTML = formatDate(currentTime);
 //celsiusLink.addEventListener("click", convertToCelsius);
 
 function displayWeatherCondition(response) {
-  console.log(response);
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
