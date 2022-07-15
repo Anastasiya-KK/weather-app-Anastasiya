@@ -40,7 +40,7 @@ ul {
   border-radius: 10px;
 }
 
-#temperature {
+.temperature {
   color: rgb(33, 33, 33);
   font-size: 44px;
   font-weight: 400;
@@ -69,4 +69,8 @@ ul {
   font-size: 80%;
   margin: 20px auto;
   max-width: 600px;
+}
+
+.feels-like {
+  text-align: center;
 }
