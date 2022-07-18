@@ -44,11 +44,6 @@ dateElement.innerHTML = formatDate(currentTime);
 //let searchForm = document.querySelector("#search-form");
 //searchForm.addEventListener("submit", search);
 
-//let fahrenheitLink = document.querySelector("#fahrenheit-link");
-//fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-//let celsiusLink = document.querySelector("#celsius-link");
-//celsiusLink.addEventListener("click", convertToCelsius);
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -104,3 +99,9 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Kyiv");
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
