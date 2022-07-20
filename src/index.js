@@ -35,7 +35,7 @@ dateElement.innerHTML = formatDate(currentTime);
 //searchForm.addEventListener("submit", search);
 
 function displayWeatherCondition(response) {
-  celsiusTemperature = response.data.main.temp; 
+  celsiusTemperature = response.data.main.temp;
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
@@ -90,6 +90,12 @@ function convertToFahrenheit(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
 let celsiusTemperature = null;
 
 let searchForm = document.querySelector("#search-form");
@@ -101,7 +107,7 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-//let celsiusLink = document.querySelector("#celsius-link");
-//celsiusLink.addEventListener("click", convertToCelsius);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("Kyiv");
