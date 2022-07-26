@@ -21,18 +21,31 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-//function search(event) {
-//event.preventDefault();
-//let cityElement = document.querySelector("#city");
-//let cityInput = document.querySelector("#city-input");
-//cityElement.innerHTML = cityInput.value;}
-
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
-//let searchForm = document.querySelector("#search-form");
-//searchForm.addEventListener("submit", search);
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `
+  <div class="weather-forecast">
+    <div class="row">
+        <div class="col-2">
+          <div class="weather-forecast-date">
+            Sun
+                </div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+            <div class="weather-forecast-temperatures">
+            +25°C
+            </div>
+        </div>
+        </div>
+        `;
+}
 
 function displayWeatherCondition(response) {
   celsiusTemperature = response.data.main.temp;
@@ -115,3 +128,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("Kyiv");
+displayForecast();
