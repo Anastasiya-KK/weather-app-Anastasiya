@@ -12,8 +12,21 @@ ul {
   list-style-type: none;
 }
 
-.weekdays {
+.weather-forecast {
   text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+#date {
+  opacity: 0.8;
+}
+
+.weather-forecast-temperatures {
+  font-size: 14px;
 }
 
 #description {
@@ -73,6 +86,7 @@ ul {
 
 .feels-like {
   text-align: center;
+  opacity: 0.8;
 }
 
 .active {
