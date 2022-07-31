@@ -2,14 +2,17 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-h1 {
-  font-family: "Pacifico", cursive;
-  color: #5587ca;
-  margin-bottom: 20px;
-}
-
 ul {
   list-style-type: none;
+  text-align: left;
+  opacity: 0.8;
+  padding-left: 0px;
+}
+
+#city {
+  font-family: "Pacifico", cursive;
+  color: #5587ca;
+  font-size: 45px;
 }
 
 .weather-forecast {
@@ -29,12 +32,10 @@ ul {
   font-size: 14px;
 }
 
-#description {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1;
-  margin-bottom: 20px;
-  text-align: center;
+#description,
+.feels-like {
+  text-align: left;
+  opacity: 0.8;
 }
 
 #description::first-letter {
@@ -58,13 +59,6 @@ ul {
   font-size: 44px;
   font-weight: 400;
   line-height: 1;
-  padding-left: 40px;
-}
-
-#icon {
-  line-height: 1;
-  display: block;
-  margin: 0 auto;
 }
 
 .units {
@@ -82,11 +76,6 @@ ul {
   font-size: 80%;
   margin: 20px auto;
   max-width: 600px;
-}
-
-.feels-like {
-  text-align: center;
-  opacity: 0.8;
 }
 
 .active {
